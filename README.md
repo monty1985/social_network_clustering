@@ -2,6 +2,56 @@
 
 This project implements spectral graph theory for community detection in social networks, using the Zachary's Karate Club dataset as a case study.
 
+## Dataset: Zachary's Karate Club
+
+The Zachary's Karate Club dataset is a classic social network dataset that represents the social relationships between members of a university karate club. This dataset is particularly valuable for community detection because:
+
+1. **Real-World Social Network**: Captures actual social interactions and relationships
+2. **Known Ground Truth**: The true community structure is known (split into two groups)
+3. **Well-Studied**: Extensive research has been done on this dataset
+4. **Manageable Size**: 34 nodes and 78 edges, making it perfect for learning and testing
+
+### Dataset Characteristics:
+- **Nodes**: 34 members of the karate club
+- **Edges**: 78 social interactions between members
+- **Communities**: 2 distinct groups (Mr. Hi's group and Officer's group)
+- **Time Period**: Observations over 2 years
+- **Split Reason**: Dispute between the instructor (Mr. Hi) and the administrator (Officer)
+
+### Why This Dataset?
+- Perfect for learning spectral clustering
+- Small enough to understand completely
+- Large enough to be meaningful
+- Has a clear community structure
+- Well-documented ground truth
+
+## Results and Visualization
+
+After running the spectral clustering algorithm, you'll get several visualizations in the `results` directory:
+
+Sample results: 
+
+image.png
+
+1. **Community Detection Results**:
+   - True communities vs. predicted communities
+   - Spectral embedding visualization
+   - Decision boundary in spectral space
+
+2. **Eigenvector Analysis**:
+   - First eigenvector values by node
+   - Distribution of eigenvector values
+   - Community separation visualization
+
+3. **Example Results**:
+![Community Detection Results](results/example_results.png)
+*Note: Replace with your actual results image*
+
+The visualizations show:
+- How well the algorithm identifies the two communities
+- The natural separation in the spectral embedding
+- The effectiveness of the spectral clustering approach
+
 ## What is Spectral Graph Theory?
 
 Spectral graph theory is a powerful mathematical framework that studies the relationship between the structural properties of graphs and the eigenvalues/eigenvectors of matrices associated with these graphs. The key matrices used are:
